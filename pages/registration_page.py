@@ -36,6 +36,11 @@ class RegistrationPage:
     def type_confirm_password(self,confirm):
         self.driver.find_element(*self.confirm_password_txt).send_keys(confirm)
 
+    def click_subscribe(self,data):
+        if data=='true':
+            self.click_yes_subscribe()
+        else:
+            self.click_no_subscribe()
 
     def click_yes_subscribe(self):
         self.driver.find_element(*self.yes_newsletter_radio).click()
@@ -48,6 +53,7 @@ class RegistrationPage:
 
     def click_continue(self):
         self.driver.find_element(*self.continue_btn).click()
+
 
     def check_warning_exist(self):
         try:
