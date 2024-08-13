@@ -1,11 +1,12 @@
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.remote.webdriver import WebDriver
+from utils.config import Config
 
 class RegistrationPage:
     def __init__(self,driver):
         self.driver:WebDriver = driver
-        self.driver.get('https://awesomeqa.com/ui/index.php?route=account/register')
+        self.driver.get(f'{Config.BASE_URL}?route=account/register')
         self.firstname_txt  = (By.ID,'input-firstname')
         self.lastname_txt = (By.ID,'input-lastname')
         self.email_txt = (By.ID,'input-email')
