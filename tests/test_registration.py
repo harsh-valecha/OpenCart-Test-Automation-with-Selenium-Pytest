@@ -25,4 +25,5 @@ def test_registration(driver:WebDriver,data):
     # checks if url ends with success pattern
     else:
         assert driver.current_url.endswith('account/success')
+        print(f'email:{data[2]} is registered successfully')
 
