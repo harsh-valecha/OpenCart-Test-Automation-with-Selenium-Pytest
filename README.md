@@ -1,7 +1,7 @@
 # Opencart Automation Testing using Selenium and Pytest
-----
+
 ### Objective - 
-Automating testcases for Opencart web app using pytest and 
+Automated testcases for Opencart web app using pytest and 
 selenium testing framework 
 ---
 ### Features - 

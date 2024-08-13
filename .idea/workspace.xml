@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34964e9c-1341-4ad0-87ae-13ef30669de8" name="Changes" comment="created parameterization for registration testcase">
-      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registration_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
+    <list default="true" id="34964e9c-1341-4ad0-87ae-13ef30669de8" name="Changes" comment="added logging for html report">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723565989839</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created login testcase and added parallal execution">
+      <option name="closed" value="true" />
+      <created>1723567712259</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723567712259</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added logging for html report">
+      <option name="closed" value="true" />
+      <created>1723567887308</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723567887308</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -118,6 +129,8 @@
     <MESSAGE value="added files" />
     <MESSAGE value="created registration testcase" />
     <MESSAGE value="created parameterization for registration testcase" />
-    <option name="LAST_COMMIT_MESSAGE" value="created parameterization for registration testcase" />
+    <MESSAGE value="created login testcase and added parallal execution" />
+    <MESSAGE value="added logging for html report" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logging for html report" />
   </component>
 </project>
