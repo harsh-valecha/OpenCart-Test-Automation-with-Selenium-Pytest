@@ -5,6 +5,7 @@ from pages.login_page import LoginPage
 from utils.csv_reader import read_csv
 login_data = read_csv('MOCK_DATA.txt')
 
+@pytest.mark.dependency(name='login')
 @pytest.mark.login
 @pytest.mark.parametrize("data",login_data)
 def test_login(driver:WebDriver,data):
