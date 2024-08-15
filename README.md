@@ -17,6 +17,8 @@ selenium testing framework
 - OpenCart Url - https://awesomeqa.com/ui/index.php
 - Testing Framework URL- https://github.com/harsh-valecha/Testing_Framework_Selenium_Pytest
 - Dummy Test data preparation tool - https://mockaroo.com/
+- Testcases Link - https://docs.google.com/spreadsheets/d/1n8bX9kxk2_Cwd6fLZEqmHTiaATdACf_65pzDdaCYU7A/edit?usp=sharing
+
 ----
 ### Follow Me on - 
 - Linkedin - https://www.linkedin.com/in/harsh-valecha/
