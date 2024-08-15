@@ -11,7 +11,7 @@ selenium testing framework
 - **Cross-Browser Support**: Capable of running tests across different browsers (Chrome, Firefox, etc.).
 - **Extensive Test Coverage**: Covers various features of the OpenCart application such as user registration, login, product search, and checkout process.
 - **Detailed Reporting**: Generates detailed HTML test reports for easy analysis of test results.
-
+- **Parallel Test Execution**: Implemented the ability to run multiple test cases simultaneously to reduce overall test execution time and improve efficiency.
 ---
 ### Important Reference Links - 
 - OpenCart Url - https://awesomeqa.com/ui/index.php
@@ -21,6 +21,13 @@ selenium testing framework
 ### Follow Me on - 
 - Linkedin - https://www.linkedin.com/in/harsh-valecha/
 - Github - https://github.com/harsh-valecha
+
+--- 
+### Planned Features
+- Database connectivity for test data driven functionality and logging purpose
+- Creating More end to end testcases 
+- Implementing the same model using playwright and pytest
+
 
 
 

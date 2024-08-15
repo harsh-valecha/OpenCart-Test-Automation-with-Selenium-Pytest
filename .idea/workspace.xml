@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34964e9c-1341-4ad0-87ae-13ef30669de8" name="Changes" comment="Updated Readme file">
-      <change afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_search.py" afterDir="false" />
+    <list default="true" id="34964e9c-1341-4ad0-87ae-13ef30669de8" name="Changes" comment="created homepage , and search functionality testcases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.csv_reader.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Harsh_Personal/Automation/opencart_automation",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.csv_reader.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Harsh_Personal/Automation/opencart_automation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Harsh_Personal\Automation\opencart_automation\opencart_automation" />
@@ -138,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723574521755</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created homepage , and search functionality testcases">
+      <option name="closed" value="true" />
+      <created>1723607122178</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723607122178</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -152,6 +156,7 @@
     <MESSAGE value="created login testcase and added parallal execution" />
     <MESSAGE value="added logging for html report" />
     <MESSAGE value="Updated Readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme file" />
+    <MESSAGE value="created homepage , and search functionality testcases" />
+    <option name="LAST_COMMIT_MESSAGE" value="created homepage , and search functionality testcases" />
   </component>
 </project>
