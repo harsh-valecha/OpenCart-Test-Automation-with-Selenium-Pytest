@@ -1,6 +1,6 @@
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
-from pages.home_page import HomePage
+from opencart_automation.pages.home_page import HomePage
 
 @pytest.mark.search
 def test_search(driver:WebDriver):

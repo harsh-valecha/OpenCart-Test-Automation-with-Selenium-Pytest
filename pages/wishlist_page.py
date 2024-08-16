@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from utils.config import Config
+from opencart_automation.utils.config import Config
 
 
 class WishlistPage:

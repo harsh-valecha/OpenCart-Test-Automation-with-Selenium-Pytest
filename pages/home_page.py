@@ -1,7 +1,7 @@
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from utils.config import Config
+from opencart_automation.utils.config import Config
 
 class HomePage:
     def __init__(self,driver:WebDriver):

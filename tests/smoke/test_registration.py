@@ -1,10 +1,10 @@
 import pytest
-from pages.registration_page import RegistrationPage
+from opencart_automation.pages.registration_page import RegistrationPage
 from selenium.webdriver import Chrome
 from selenium.webdriver.remote.webdriver import WebDriver
-from utils.csv_reader import read_csv
+from opencart_automation.utils.csv_reader import read_csv
 
-registration_data = read_csv('MOCK_DATA.txt')
+registration_data = read_csv('test_data/MOCK_DATA.txt')
 
 @pytest.mark.smoke
 @pytest.mark.parametrize("data",registration_data)

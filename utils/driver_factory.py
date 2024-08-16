@@ -1,5 +1,5 @@
 from selenium import webdriver
-from utils.config import Config
+from opencart_automation.utils.config import Config
 from selenium.webdriver.remote.webdriver import WebDriver
 
 def get_driver()->WebDriver:

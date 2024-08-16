@@ -1,11 +1,11 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from utils.config import Config
+from opencart_automation.utils.config import Config
 
 class LoginPage:
     def __init__(self,driver:WebDriver):
         self.driver:WebDriver = driver
-        self.driver.get(Config.BASE_URL+'?route=account/login')
+        self.driver.get(Config.LOGIN_URL)
         self.email_txt = (By.NAME,"email")
         self.password_txt = (By.NAME,"password")
         self.login_btn = (By.XPATH,"//input[@value='Login']")
