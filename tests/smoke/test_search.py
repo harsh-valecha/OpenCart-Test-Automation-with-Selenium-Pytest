@@ -2,7 +2,7 @@ import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 from opencart_automation.pages.home_page import HomePage
 
-@pytest.mark.search
+
 def test_search(driver:WebDriver):
     page = HomePage(driver)
     search_key = 'iphone'

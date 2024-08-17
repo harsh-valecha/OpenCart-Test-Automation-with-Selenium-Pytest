@@ -6,7 +6,7 @@ from opencart_automation.utils.csv_reader import read_csv
 
 registration_data = read_csv('test_data/MOCK_DATA.txt')
 
-@pytest.mark.smoke
+
 @pytest.mark.parametrize("data",registration_data)
 def test_registration(driver:WebDriver,data):
     page = RegistrationPage(driver)
