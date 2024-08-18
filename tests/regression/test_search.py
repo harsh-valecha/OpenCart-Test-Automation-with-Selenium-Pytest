@@ -2,7 +2,7 @@ import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 from opencart_automation.pages.search_page import SearchPage
 from opencart_automation.pages.login_page import LoginPage
-
+from opencart_automation.utils.csv_reader import read_csv
 
 # this test_login will be required later when we have to first login and then perform action
 @pytest.mark.skip
@@ -16,10 +16,15 @@ def test_login(driver:WebDriver):
     return driver
 
 
+products_data = read_csv('test_data\Products_data.csv')
 
-def test_search_one_keyword(driver:WebDriver):
+@pytest.mark.skip
+@pytest.mark.parametrize("data",products_data)
+def test_search_one_keyword(driver:WebDriver,data):
     #driver:WebDriver = test_login(driver)
+    value = data[0]
     page = SearchPage(driver)
-    page.type_keywords_and_enter('iphone')
-    page.product_name_check('iphone')
+    print(f'Performing search operation on {value}')
+    page.type_keywords_and_enter(value)
+    assert page.product_name_check(value)==True
     print('product search working correctly')

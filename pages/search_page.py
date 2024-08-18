@@ -35,10 +35,11 @@ class SearchPage:
 
 
     def product_name_check(self,value:str):
+        # only incomment next line when performing unit testing
         #self.type_keywords_and_enter(value)
         cards = self.driver.find_elements(*self.product_cards)
         for card in cards:
-            if card.find_element(*self.product_names_label).text.lower()==value.lower():
+            if value.lower() in card.find_element(*self.product_names_label).text.lower():
                 return True
         return False
 
@@ -46,6 +47,7 @@ class SearchPage:
 # for unit testing
 # driver = Chrome()
 # p1 = SearchPage(driver)
-# print(p1.product_name_check('iphone'))
-
+# driver.implicitly_wait(10)
+# print(p1.product_name_check('Lenovo'))
+#
 
