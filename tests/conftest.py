@@ -12,12 +12,3 @@ def driver():
     driver.quit()
 
 
-@pytest.mark.dependency(name='login')
-def login(driver:WebDriver):
-    page = LoginPage(driver)
-    page.type_email('dnewiss0@usatoday.com')
-    page.type_password('bR4Dv)>>GS6rqayT')
-    page.click_login()
-    assert driver.current_url.endswith('?route=account/account')
-    print(f'user is logged in successfully')
-
