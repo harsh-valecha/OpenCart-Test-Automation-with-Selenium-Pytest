@@ -27,7 +27,6 @@ selenium testing framework
 
 --- 
 ### Planned Features
-- Database connectivity for test data driven functionality and logging purpose
 - Creating More end to end testcases 
 - Implementing the same model using playwright and pytest
 
