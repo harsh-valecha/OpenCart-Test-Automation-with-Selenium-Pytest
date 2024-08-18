@@ -7,11 +7,12 @@ selenium testing framework
 ### Features - 
 - **Automation Framework**: Built using Selenium WebDriver and Pytest, providing a flexible and scalable test suite.
 - **Page Object Model**: Uses the Page Object Model (POM) design pattern for maintainability and readability.
-- **Data-Driven Testing**: Supports data-driven testing using test data from external sources.
+- **Data-Driven Testing**: Supports data-driven testing using test data from external sources such as csv file , json files or sql tables.
 - **Cross-Browser Support**: Capable of running tests across different browsers (Chrome, Firefox, etc.).
 - **Extensive Test Coverage**: Covers various features of the OpenCart application such as user registration, login, product search, and checkout process.
 - **Detailed Reporting**: Generates detailed HTML test reports for easy analysis of test results.
 - **Parallel Test Execution**: Implemented the ability to run multiple test cases simultaneously to reduce overall test execution time and improve efficiency.
+- **Data Scraping Support**: Supports datascraping from different web elements and tables 
 ---
 ### Important Reference Links - 
 - OpenCart Url - https://awesomeqa.com/ui/index.php
