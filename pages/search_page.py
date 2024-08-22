@@ -17,6 +17,7 @@ class SearchPage:
         self.search_btn = (By.XPATH,"//input[@value='Search']")
         self.product_cards = (By.XPATH,"//div[@class='product-thumb']")
         self.product_names_label = (By.XPATH,"//div[@class='caption']/h4/a")
+        self.add_to_cart_btn = (By.XPATH,"//div[@class='button-group']/button[1]/i")
 
     def check_search_page(self)->bool:
         # validates if the page is search page
@@ -32,6 +33,9 @@ class SearchPage:
         keyword_element = self.driver.find_element(*self.keywords_txt)
         keyword_element.send_keys(*value)
         keyword_element.send_keys(Keys.ENTER)
+
+    def click_add_to_cart(self):
+        self.driver.find_element(*self.add_to_cart_btn).click()
 
 
     def product_name_check(self,value:str):
