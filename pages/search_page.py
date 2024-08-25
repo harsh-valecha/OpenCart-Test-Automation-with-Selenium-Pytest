@@ -4,9 +4,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from opencart_automation.utils.config import Config
 from selenium.webdriver import Chrome
+import logging
 
 class SearchPage:
+    logger = logging.getLogger(__name__)
     def __init__(self,driver:WebDriver):
+        self.logger.info('Search object initialized')
         self.driver:WebDriver = driver
         self.driver.get(Config.SEARCH_URL)
         self.page_title = (By.TAG_NAME,'h1')
@@ -20,6 +23,7 @@ class SearchPage:
         self.add_to_cart_btn = (By.XPATH,"//div[@class='button-group']/button[1]/i")
 
     def check_search_page(self)->bool:
+        self.logger.info('search page check is being executed')
         # validates if the page is search page
         if self.driver.find_element(*self.page_title).is_displayed():
             return True
@@ -29,18 +33,21 @@ class SearchPage:
 
 
     def type_keywords_and_enter(self,value:str) -> None:
+        self.logger.info('typing keywords to search field and clicking enter button test')
         # types keyword and clicks enter
         keyword_element = self.driver.find_element(*self.keywords_txt)
         keyword_element.send_keys(*value)
         keyword_element.send_keys(Keys.ENTER)
 
     def click_add_to_cart(self):
+        self.logger.info('Add to cart button click function being executed')
         self.driver.find_element(*self.add_to_cart_btn).click()
 
 
     def product_name_check(self,value:str):
         # only incomment next line when performing unit testing
         #self.type_keywords_and_enter(value)
+        self.logger.info('products search from cards being executed')
         cards = self.driver.find_elements(*self.product_cards)
         for card in cards:
             if value.lower() in card.find_element(*self.product_names_label).text.lower():
