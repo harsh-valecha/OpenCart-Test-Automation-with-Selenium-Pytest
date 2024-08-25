@@ -13,6 +13,7 @@ selenium testing framework
 - **Detailed Reporting**: Generates detailed HTML test reports for easy analysis of test results.
 - **Parallel Test Execution**: Implemented the ability to run multiple test cases simultaneously to reduce overall test execution time and improve efficiency.
 - **Data Scraping Support**: Supports datascraping from different web elements and tables 
+- **Logging Support** Supports logging of the testcases being executed and webelements being interacted with added to a log file
 ---
 ### Important Reference Links - 
 - OpenCart Url - https://awesomeqa.com/ui/index.php
@@ -27,6 +28,7 @@ selenium testing framework
 
 --- 
 ### Planned Features
+- Managing Logging feature to sustain previous logs 
 - Creating More end to end testcases 
 - Implementing the same model using playwright and pytest
 

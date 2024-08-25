@@ -6,8 +6,11 @@ from opencart_automation.tests.conftest import login
 import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+import logging
 
+logger = logging.getLogger(__name__)
 def test_add_to_cart_from_search(driver:WebDriver):
+    logger.info('Integration testcase to login then go to search page then search a product and add to cart being executed')
     driver = login(driver)
     page = SearchPage(driver)
     page.type_keywords_and_enter('apple')
